@@ -4,14 +4,14 @@ export const createState = (defValue) => {
     return val = {
         aInternal: defValue,
         aListener: function(val) {},
-        set val(val) {
+        set value (val) {
           this.aInternal = val;
           this.aListener(val);
         },
-        get val() {
+        get value () {
           return this.aInternal;
         },
-        listen: function(listener) {
+        listen: (listener) => {
           this.aListener = listener;
         }
     }

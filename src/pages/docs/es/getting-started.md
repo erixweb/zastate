@@ -9,11 +9,15 @@ layout: "../../../Layouts/DocsLayout.astro"
 
 Zastate es una librería para manejar estados con JavaScript. En esta, puedes [pasar estados](#usar-esm) (con sus valores) usando EcmaScript Modules.
 
+---
+
 ## Empieza con poco JS
 
 📲 Para crear un estado en puedes empezar por menos de 1kB de JavaScript.
 
 📲 Tres modos: `desarollo`, `separado + minificado`, `junto + minificado`.
+
+---
 
 ## Modo desarollo & Producción
 
