@@ -1,15 +1,75 @@
----
----
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/gears.webp">
+    <title>Zastate</title>
+    <script type="module" defer src="main.js"></script>
+    <script defer>
+        window.addEventListener("load", () => {
+            let s = document.createElement("script")
+            s.src = "highlight.js"
+            document.body.append(s)
+        })
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>
+                Maneja estados con 1kB
+            </h1>
+            <p>
+                Con zastate puedes manejar estados usando <code>createState()</code> con apenas 700 bytes de JavaScript.
+                También, usa <code>useEffect()</code> con 600 bytes.
+            </p>
+            <div class="buttons">
+                <button>
+                    On/off
+                </button>
+                <a href="/docs/es/">
+                    Docs
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>
+                Estados ligeros
+            </h1>
+            <p>
+                En Zastate puedes crear estados con menos de <code>0,7kB</code> (700 bytes) de JavaScript. Todos los
+                hooks están separados de forma que no utilizes más JavaScript del que necesitas.
+            </p>
+<pre class="language-js" is:raw>
+<code>import { createState } from "src/createState.js"
+
+const clicks = createState(0)
+
+clicks.listen(val => {
+    console.log(`Updated value to ${val}`)
+})</code></pre>
+        </section>
+        <section>
+            <h1>
+                Utiliza ES Modules
+            </h1>
+            <p>
+                Importa fácilmente tus estados entre archivos con <code>ESM</code>. Importa cómodamente Zastate en cualquier archivo JavaScript. 
+            </p>
+            <pre class="language-js" is:raw><code>import { createState } from "src/createState.js" // Not necessary
+import { liked } from "js/likedvideos.js"
+
+console.log(liked)</code></pre>
+        </section>
+    </main>
+</body>
+
 </html>

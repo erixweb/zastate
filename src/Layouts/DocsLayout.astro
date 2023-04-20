@@ -9,6 +9,7 @@ const { frontmatter } = Astro.props
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/gears.webp">
     <title>{frontmatter.title} | Zastate</title>
     <script defer src="/docs.js"></script>
     <script defer>
@@ -16,6 +17,7 @@ const { frontmatter } = Astro.props
             let s = document.createElement("script")
             s.src = "/highlight.js"
             document.body.append(s)
+            document.querySelectorAll("pre").forEach(pre => pre.setAttribute("class", "language-js"))
         })
     </script>
     <link rel="stylesheet" href="/styles.css">
@@ -28,7 +30,8 @@ const { frontmatter } = Astro.props
                 zastate@1.0.0
             </h3>
             <div class="links">
-                <a href="/es/install">Instalación</a>
+                <a href="/docs/es/getting-started">Empezando</a>
+                <a href="/docs/es/install">Instalación</a>
             </div>
         </aside>
         <main>
