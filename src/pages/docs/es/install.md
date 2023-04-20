@@ -1,5 +1,5 @@
 ---
-title: "Hello"
+title: "Instalación"
 draft: true
 layout: "../../../Layouts/DocsLayout.astro"
 ---
@@ -9,3 +9,4 @@ Para instalar Zastate puedes usar el <a href="/download.zip" rel="nofollow">link
 
 # Windows
 
+También puedes usar el siguiente comando en PowerShell para instalar Zastate. Al usar este comando se instalará todos los archivos de la librería en el actual directorio.
