@@ -1,0 +1,227 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Optimistic Display;
+    font-size: 17px;
+    color: #fff;
+
+    background-color: rgb(45, 45, 56);
+
+    min-height: 100vh;
+}
+.wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: "Optimistic Display";
+    src: url("/OptimisticDisplay.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Optimistic Display";
+    src: url("/OptimisticDisplayBOLD.woff2") format("woff2");
+    font-weight: 600;
+}
+/*
+    Aside
+*/
+aside {
+    margin-top: 0px;
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+
+    position: sticky;
+    top: 0px;
+
+}
+aside h3 {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    color: gray;
+    margin-bottom: 25px;
+}
+aside a {
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+}
+aside .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+aside a:focus, aside a:hover {
+    background-color: #4c74f7a0;
+}
+/*
+    Header
+*/
+header {
+    width: 100%;
+    min-height: 80vh;
+    padding: 16px;
+
+    background: linear-gradient(30deg, rgb(22, 22, 28), rgb(34, 34, 66), rgb(32, 32, 53));
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+header div {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    transition: 450ms;
+    padding: 16px;
+    width: 95%;
+    max-width: 40rem;
+    border-radius: 20px;
+}
+
+header h1 {
+    text-shadow: 0px 0px 25px rgba(247, 0, 255, 0.707);
+    font-size: 50px;
+    text-align: center;
+}
+
+header p {
+    text-shadow: 4px 4px 15px rgba(247, 0, 255, 0.707);
+    line-height: 35px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header .bright {
+    background: linear-gradient(50deg, #8a03965a, #9900ff5a, #571d5b5a);
+}
+
+header .buttons {
+    display: inline-flex;
+    gap: 0px;
+    
+    width: 100%;
+    gap: 10px;
+}
+header button, header a {
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    background-color: rgb(132, 46, 232);
+
+    cursor: pointer;
+    transition: 250ms;
+    max-height: 52px;
+}
+
+header button:hover, header a:hover{
+    background-color: rgb(148, 72, 235);
+}
+
+/*
+    Main
+*/
+.docs {
+    position: relative;
+}
+.docs main {
+    align-self: center;
+    height: 100vh;
+}
+main {
+    margin-top: 0px;
+    padding: 16px;
+    width: 100%;
+    max-width: 50rem;
+    line-height: 34px;
+}
+.docs main {
+    width: 100%;
+    text-align: start;
+}
+.docs main h1 {
+    margin-bottom: 40px;
+    text-align: start;
+}
+.docs main p {
+    margin-left: 0px;
+    text-align: start;
+}
+section, .docs main {
+    width: 100%;
+    padding: 16px;
+}
+section h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p, .docs main p {
+    max-width: 50rem;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+p code {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 7px;
+    padding: 4px;
+    background-color: rgb(132, 46, 232);
+}
+.highlight, p a {
+    color: rgb(255, 179, 0);
+}
+/*
+    Tip
+*/
+.tipbox {
+    color: #e9efff;
+    width: 100%;
+    max-width: 50rem;
+    padding: 16px;
+    background-color: rgb(61, 61, 74);
+    border-radius: 7px;
+}
+/*
+    Code
+*/
+pre {
+    white-space: pre;
+    max-width: 50rem;
+    background:#000;
+    border-radius: 10px;
+}
+code[class*=language-],pre[class*=language-]{color:#9efeff;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;hyphens:none;font-family:Operator Mono,Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-weight:400;font-size:17px;line-height:25px;letter-spacing:.5px;text-shadow:0 1px #222245}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{color:inherit;background:#a599e9}code[class*=language-] ::-moz-selection,code[class*=language-] ::selection,code[class*=language-]::-moz-selection,code[class*=language-]::selection,pre[class*=language-] ::-moz-selection,pre[class*=language-] ::selection,pre[class*=language-]::-moz-selection,pre[class*=language-]::selection{color:inherit;background:#a599e9}pre[class*=language-]{padding:2em;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#25252d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token{font-weight:400}.token.cdata,.token.comment,.token.prolog{color:#b362ff}.token.atrule,.token.builtin,.token.delimiter,.token.doctype,.token.important,.token.keyword,.token.selector,.token.tag,.token.tag .punctuation{color:#ff9d00}.token.attr-name,.token.operator{color:#ffb454}.token.punctuation{color:#fff}.token.boolean,.token.constant,.token.number,.token.property,.token.variable{color:#ff628c}.token.entity,.token.symbol{color:#6897bb}.token.char,.token.string{color:#a5ff90}.token.attr-value,.token.attr-value .punctuation{color:#a5c261}.token.attr-value .punctuation:first-child,code.language-css .token.property,code.language-css .token.property+.token.punctuation{color:#a9b7c6}.token.url{color:#287bde;text-decoration:underline}.token.function{color:#fad000}.token.regex{background:#364135}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.inserted{background:#0f0}.token.deleted{background:#ff000d}code.language-css .token.id,code.language-css .token.selector>.token.attribute,code.language-css .token.selector>.token.class,code.language-css .token.selector>.token.pseudo-class,code.language-css .token.selector>.token.pseudo-element{color:#ffc66d}.token.class-name{color:#fb94ff}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:0 0}.line-highlight.line-highlight{margin-top:36px;background:linear-gradient(90deg,rgba(98, 101, 255, 0.17),transparent)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{content:""}
+
+
+@media (max-width: 1250px) {
+    .right-aside {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .docs section p {
+        max-width: 100%;
+    }
+    .left-aside {
+        display: none;
+    }
+}

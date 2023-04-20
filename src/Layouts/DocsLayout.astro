@@ -1,0 +1,46 @@
+---
+const { frontmatter } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastate {frontmatter.title}</title>
+    <script defer src="/docs.js"></script>
+    <script defer>
+        window.addEventListener("load", () => {
+            let s = document.createElement("script")
+            s.src = "/highlight.js"
+            document.body.append(s)
+        })
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="docs">
+    <div class="wrap">
+        <aside class="left-aside">
+            <h3>
+                zastate@1.0.0
+            </h3>
+            <div class="links">
+                <a href="/es/install">Instalación</a>
+            </div>
+        </aside>
+        <main>
+            <slot />
+        </main>
+        <aside class="right-aside">
+            <h3>
+                Index
+            </h3>
+            <div class="links">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
