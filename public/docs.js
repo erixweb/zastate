@@ -1,4 +1,17 @@
 const aside = document.querySelector(".right-aside").querySelector(".links")
+const leftAside = document.querySelector(".left-aside").querySelector(".links")
+const navLinks = document.querySelector(".floating-menu").querySelector("div")
+
+const documentationList = [
+    '<a href="/docs/es/getting-started">Empezando</a>',
+    '<a href="/docs/es/install">Instalación</a>',
+    '<a href="/docs/es/createState">createState</a>',
+]
+
+documentationList.forEach(item => {
+    leftAside.innerHTML = leftAside.innerHTML + item
+    navLinks.innerHTML = navLinks.innerHTML + item
+})
 
 document.querySelectorAll("h2").forEach(item => {
     let h1 = item
