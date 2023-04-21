@@ -1,6 +1,5 @@
 ---
 title: "Empezando"
-draft: true
 layout: "../../../Layouts/DocsLayout.astro"
 ---
 # Empezando

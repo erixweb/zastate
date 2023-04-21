@@ -1,6 +1,5 @@
 ---
 title: "Instalación"
-draft: true
 layout: "../../../Layouts/DocsLayout.astro"
 ---
 # Instalación
