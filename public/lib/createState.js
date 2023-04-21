@@ -11,9 +11,9 @@ export const createState = (defValue) => {
         get value () {
           return this.aInternal;
         },
-        listen: (listener) => {
+        listen: function(listener) {
           this.aListener = listener;
-        }
+        },
     }
 }
 
