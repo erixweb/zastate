@@ -60,6 +60,12 @@ aside h3 {
     color: gray;
     margin-bottom: 25px;
 }
+aside h2 {
+    padding: 8px;
+    font-size: 20px;
+    width: 100%;
+    text-align: start;
+}
 aside a {
     border-radius: 7px;
     text-decoration: none;

@@ -7,6 +7,7 @@ const documentationList = [
     '<a href="/docs/es/install">Instalación</a>',
     '<a href="/docs/es/createState">createState</a>',
     '<a href="/docs/es/useEffect">useEffect</a>',
+    '<h2>API Ref</h2>'
 ]
 
 documentationList.forEach(item => {
