@@ -6,7 +6,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
-            <img src="/gears.webp?icon" alt="Logo de Zastand" />
+            <a href="/">
+                <img src="/gears.webp?icon" alt="Logo de Zastand" />
+            </a>
         </div>
         <div>
             <input type="text" placeholder="Search Ctrl + K" onclick="document.querySelector('.floating-menu').style['display'] = 'flex'" readonly> 
@@ -31,6 +33,10 @@ nav {
     display: flex;
     flex-direction: row;
     place-items: center;
+    transition: 500ms;
+}
+nav img:active {
+    transform: scale(0.9);
 }
 nav .content {
     text-align: start;
@@ -125,6 +131,14 @@ nav svg {
 }
 .floating-menu a:focus, .floating-menu a:hover {
     background-color: #4c74f7a0;
+}
+.floating-menu h2 {
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 7px;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
 }
 
 @media (max-width: 700px) {
