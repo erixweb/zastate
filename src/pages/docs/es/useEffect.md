@@ -57,5 +57,5 @@ profile.value = {
 ```
 
 :::tip
-En este ejemplo hemos usado un parametro en la función del useEffect. Este parametro indica el nuevo valor del estado.
+En este ejemplo hemos usado un parámetro en la función del useEffect. Este parametro indica el nuevo valor del estado.
 :::?
