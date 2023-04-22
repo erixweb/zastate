@@ -1,0 +1,97 @@
+<header>
+    <div>
+        <h1>
+            Maneja estados con 1kB
+        </h1>
+        <p>
+            Con zastate puedes manejar estados usando <code>createState()</code> con apenas 700 bytes de JavaScript.
+            También, usa <code>useEffect()</code> con 600 bytes.
+        </p>
+        <div class="buttons">
+            <button>
+                On/off
+            </button>
+            <a href="/docs/es/">
+                Docs
+            </a>
+        </div>
+    </div>
+</header>
+
+<style is:inline>
+/*
+    Header
+*/
+header {
+    width: 100%;
+    min-height: 80vh;
+    padding: 16px;
+
+    background: linear-gradient(30deg, rgb(22, 22, 28), rgb(34, 34, 66), rgb(32, 32, 53));
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+header div {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    transition: 450ms;
+    padding: 16px;
+    width: 95%;
+    max-width: 40rem;
+    border-radius: 20px;
+}
+
+header h1 {
+    text-shadow: 0px 0px 25px rgba(247, 0, 255, 0.707);
+    font-size: 50px;
+    text-align: center;
+}
+
+header p {
+    text-shadow: 4px 4px 15px rgba(247, 0, 255, 0.707);
+    line-height: 35px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header .bright {
+    background: linear-gradient(50deg, #8a03965a, #9900ff5a, #571d5b5a);
+}
+
+header .buttons {
+    display: inline-flex;
+    gap: 0px;
+    
+    width: 100%;
+    gap: 10px;
+}
+header button, header a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+
+    cursor: pointer;
+    transition: 250ms;
+    min-height: 60px;
+}
+header button {
+    background-color: rgb(132, 46, 232);
+}
+header a:active {
+    transform: scale(0.9);
+    background-color: #1715275a;
+}
+header a {
+    border: 3px solid gray;
+}
+header button:hover {
+    background-color: rgb(148, 72, 235);
+}
+</style>
