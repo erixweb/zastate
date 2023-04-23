@@ -1,3 +1,6 @@
+---
+import LightButton from "./LightButton.astro"
+---
 <header>
     <div>
         <h1>
@@ -8,9 +11,7 @@
             También, usa <code>useEffect()</code> con 600 bytes.
         </p>
         <div class="buttons">
-            <button>
-                On/off
-            </button>
+            <LightButton />
             <a href="/docs/es/">
                 Docs
             </a>
@@ -85,13 +86,14 @@ header button {
     background-color: rgb(132, 46, 232);
 }
 header a:active {
-    transform: scale(0.9 );
+    transform: scale(0.9);
     background-color: #1715275a;
 }
 header a {
     border: 3px solid gray;
 }
-header button:hover {
+header button:active {
+    transform: scale(0.9);  
     background-color: rgb(148, 72, 235);
 }
 </style>

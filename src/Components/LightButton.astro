@@ -1,0 +1,17 @@
+<script defer type="module" is:inline>
+    import createState from "/lib/createState.js"
+
+    window.addEventListener("load", () => {
+        const lightState = createState(true)
+        const lightBtn = document.querySelector(".light-btn")
+
+        lightBtn.addEventListener("click", () => {
+            lightState.value ? lightState.value = false : lightState.value = true
+            lightState.value === false ? lightBtn.classList.add("bright") : lightBtn.classList.remove("bright") 
+
+        })
+    })
+</script>
+<button class="light-btn">
+    On/off
+</button>
