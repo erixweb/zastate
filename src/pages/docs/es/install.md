@@ -4,4 +4,14 @@ layout: "../../../Layouts/DocsLayout.astro"
 ---
 # Instalación
 
-Para instalar Zastate puedes usar el <a href="/download.zip" rel="nofollow">link</a> en la página principal para instalar el modo desarollo y la versión para producción en <a href="/zastate.min.js" rel="nofollow">https://zastate.netlify.app/zastate.min.js</a>.
+## Dev
+
+Para instalar la versión de desarollo diríjase a el siguiente link: [download#dev](/download#dev)
+
+## Compact
+
+Si vas a pasar tu aplicación a producción diríjase a [download#compact](/download#dev)
+
+## Min
+
+Si quieres que tus scripts vayan cargándose poco a poco (producción) diríjase a [download#min](/download#min)
