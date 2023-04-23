@@ -1,18 +1,18 @@
-export const createState = (defValue) => {
+export const createState = (initialValue) => {
     let val
 
     return val = {
-        aInternal: defValue,
+        aInternal: initialValue,
         aListener: function(val) {},
         set value (val) {
-          this.aInternal = val;
-          this.aListener(val);
+          this.aInternal = val
+          this.aListener(val)
         },
         get value () {
-          return this.aInternal;
+          return this.aInternal
         },
         listen: function(listener) {
-          this.aListener = listener;
+          this.aListener = listener
         },
     }
 }
