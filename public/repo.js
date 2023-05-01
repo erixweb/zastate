@@ -1,9 +1,7 @@
-import { useEffect, createState } from "./lib/zastate.min.js";
+import { clientDB } from "./lib/clientDB.js";
 
-const myState = createState(false)
-
-useEffect(value => {
-    console.log(value)
-}, myState)
-
-myState.value = 242
+clientDB()
+    .insert({
+        clicks: 0,
+        user: "asd"
+    })
